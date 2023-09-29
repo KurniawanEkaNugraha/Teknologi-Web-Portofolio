@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="file:///C:/Users/divka/Documents/Foto%20Web%20portofolio/669948_html_code_coding_programming_web_icon.svg" type="image/x-icon">
+        <title>Web Portofolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    </style>
+
+    <body>
+
+        <!-- Start Navbar-->
+        <nav class="py-5">
+            <div class="container flex items-center justify-between">
+                <a href="#">
+                    <h2 class="text-2xl tracking-widest text-white">C.Science</h2>
+                </a>
+                <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger">
+                <label class="peer-checked:hamburger block cursor-pointer p-2 md:hidden" for="hamburger">
+                    <div class="m-auto h-0.5 w-6 rounded bg-white transition duration-300"></div>
+                    <div class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"></div>   
+                </label>
+                <div class="absolute inset-x-0 top-20 flex -translate-x-full flex-col items-center gap-8 bg-slate-800
+                py-8 opacity-0 transition duration-300 peer-checked:translate-x-0 peer-checked:opacity-100 md:relative md:top-0 md:translate-x-0 md:flex-row
+                md:bg-transparent md:py-0 md:opacity-100">
+                <a href="#home"class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">Home</a>
+                <a href="#about"class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">Tentang Saya</a>
+                <a href="#skills"class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">Minat dan Hoby</a>
+                <a href="#portofolio"class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">Project</a>
+                <a href="#contact"class="text-white hover:border-b hover:border-white hover:pb-2 transition-all duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar-->
+
+        <!-- START HERO -->
+        <div style="background-image: url('https://i.postimg.cc/4X6Fvrd8/bg-image.png');">
+            <div id="home" class="flex items-center justify-center flex-col h-screen">
+                <h1 class="text-white font-bold text-6xl text-center">Saya Kurniawan Eka</h1>
+                <h2 class="text-white text-xl font-bold mt-4 text-center">Mahasiswa Jurusan Teknik Informatika</h2>
+                <div class="flex items-center justify-center gap-8 mt-6">
+                    <a href="https://www.instagram.com/kurniawan_eka88/"class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full"target="_blank">
+                        <i class='bx bxl-instagram text-3xl'></i>
+                    </a>
+
+                    <a href="https://github.com/KurniawanEkaNugraha" class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full"target="_blank">
+                        <i class='bx bxl-github text-3xl'></i>
+                    </a>
+
+                    <a href="#" class="text-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-out flex items-center justify-center w-12 h-12 bg-white rounded-full">
+                        <i class='bx bxl-linkedin text-3xl'></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- END : HERO -->
+
+        <!-- START : ABOUT -->
+        <section class="container" id="about">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+                <img class="mb-5" src="https://i.postimg.cc/HxwjKdjt/Desain-tanpa-judul-2.png" alt ="">
+                <div>
+                <h3 class="font-bold text-blue-900 text-2xl">Tentang Saya</h3>
+                <h4 class="text-white font-bold text-3xl mt-2">Identitas Diri</h4>
+                <p class="text-lg tracking-tighter text-justify text-slate-500 mt-2">
+                    Nama lengkap saya adalah Kurniawan Eka Nugraha, saya adalah lulusan dari sekolah SMKN 3 Singaraja dengan jurusan Teknik Komputer dan Jaringan, dan ini merupakan salah satu alasan saya masuk di jurusan teknik informatika ini. sedari dulu saya senang mencoba hal hal baru , termasuk bahasa pemrograman , saya sangat senang ketika
+                    belajar bahasa pemrograman terutama di bahasa HTML, CSS, dan juga javascript , meskipun yang lain juga senang , namun tingkat kesenangannya hanya biasa saja,
+                    Saya adalah seorang yang bersemangat, mandiri, dan memiliki motivasi tinggi dalam mencapai tujuan.
+                </p>
+                </div>
+            </div>
+        </section>
+        <!-- END : ABOUT -->
+
+        <!-- START : Minat dan hoby -->
+        <section class="container" id="skills">
+            <h3 class="font-bold text-blue-900 text-2xl text-center">APA SAJA SIH MINAT DAN HOBY SAYA</h3>
+            <h4 class="text-white font-bold text-3xl mt-2 text-center">Yuk Simak</h4>
+            <div class="max-w-[980px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-7 mt-8"></div>
+            
+            <!-- card minat dan hoby 1-->
+            <div class="flex flex-col gap-8 bg-slate-800/80 rounded-xl px-6 py-5">
+                <div class="flex gap-4">
+                    <img class = "p-3 rounded-md bg-slate-700" src="https://i.postimg.cc/9F3XK1SQ/skill-fe.png"alt= "">
+                    <h4 class="text-3xl mt-4 font-semibold text-white">Minat</h4>
+                </div>
+                <p class="text-lg tracking-tight text-justify text-slate-400">
+                    Sebagai mahasiswa Jurusan Teknik Informatika, minat saya yaitu minat dalam mempelajari bahasa pemrograman dan juga Jaringan khususnya dibidang Cyber Security
+                    karena menurut saya apabila ilmu tersebut terus dipelajari dan ditekuni , pastinya akan berguna untuk di masa depan nanti , seperti yang kita ketahui bahwa teknologi
+                    setiap tahunnya selalu bertambah canggih dan itulah salah satu alasan saya minat dibidang tersebut. 
+                </p>
+                </div>
+                <div class="max-w-[980px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-7 mt-8"></div>
+
+                <!-- card minat dan hoby 2-->
+                <div class="flex flex-col gap-8 bg-slate-800/80 rounded-xl px-6 py-5">
+                    <div class="flex gap-4">
+                        <img class = "p-3 rounded-md bg-slate-700" src="https://i.postimg.cc/gjmSLCj0/skill-ui.png"alt= "">
+                        <h4 class="text-3xl mt-4 font-semibold text-white">Hoby</h4>
+                    </div>
+                    <p class="text-lg tracking-tighter text-justify text-slate-400">
+                        Hoby pertama saya yaitu bernyanyi, Saya selalu merasa senang dan bebas ketika saya bernyanyi. Suara adalah cara yang indah untuk mengekspresikan perasaan dan emosi. Ketika saya merasa bahagia, sedih, marah, atau bahkan rindu, saya bisa menyanyikannya melalui lagu.
+                        Hoby kedua saya adalah bermain badminton. Badminton adalah olahraga yang mengasyikkan dan memerlukan keterampilan serta ketahanan fisik. Saya suka sensasi ketika saya memukul kok dengan raket dan melihatnya melewati jaring menuju sisi lawan. 
+                    </p>
+                    </div>
+                </div>
+
+            </div>
+
+       
+
+        </section>
+        <!-- END : Minat dan Hoby -->
+
+        <!-- START : PORTFOLIO -->
+        <section class="container" id="portofolio">
+        <h3 class="font-bold text-blue-900 text-2xl text-center">PORTOFOLIO</h3>
+        <h4 class="text-white font-bold text-3xl mt-2 text-center">PROJECT TERBARU</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
+
+        <!-- Card Portofolio 1-->
+            <div class="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden">
+                <img src="https://i.postimg.cc/5yc9fGQ2/project1.png"alt="">
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-center mt-3  text-white">Coming Soon</h4>
+                   
+                </div>
+            </div>
+
+            <!-- Card Portofolio 2-->
+            <div class="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden">
+                <img src="https://i.postimg.cc/BvrfFFSh/project2.png"alt="">
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-center mt-3 text-white">Coming Soon</h4>
+                 
+                </div>
+            </div>
+
+            <!-- Card Portofolio 3-->
+            <div class="flex flex-col bg-slate-800/80 rounded-xl overflow-hidden">
+                <img src="https://i.postimg.cc/yxnGL3KC/project3.png"alt="">
+                <div class="px-5 py-4">
+                    <h4 class="text-2xl font-medium text-center mt-3 text-white">Coming Soon</h4>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- END : PORTFOLIO -->
+
+        <!-- START : CONTACT -->
+        <section class="container" id="contact">
+            <div class="max-w-5xl mx-auto bg-slate-800/80 rounded-xl">
+                <div class="text-center py-16">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white">Have Any Project In Mind ?</h3>
+                    <div id="home">
+                    <a href="https://www.whatsapp.com/"target="_blank"><button class="mt-4 px-5 py-3 font-semibold text-sm text-white rounded-md bg-blue-500 hover:scale-105 
+                    hover:bg-blue-600 active:scale-95 transition-all duration-300 ">Contact Me</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- END : CONTACT -->
+
+        <!-- START : FOOTER -->
+        <footer class="bg-slate-800/80">
+            <div class="container py-6">
+            
+                <p class="text-lg font-medium text-white text-center mt-2">Copyright 2023 Kurniawan Eka.</p>
+            </div>
+        </footer>
+        <!-- END : FOOTER -->
+
+
+        <!-- Script JS-->
+        <script src="main.js"></script>
+    </body>
+
+</html>
